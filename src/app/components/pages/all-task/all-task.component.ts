@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { HttpService } from './../../../services/http.service';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -5,30 +6,31 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-all-task',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, DatePipe],
   templateUrl: './all-task.component.html',
-  styleUrl: './all-task.component.scss'
+  styleUrl: './all-task.component.scss',
 })
 export class AllTaskComponent {
-  newTask='';
-  taskList:any []=[];
+  newTask = '';
+  taskList: any[] = [];
   httpService = inject(HttpService);
+  dateNow = new Date();
 
   ngOnInit(): void {
     this.getALlTask();
   }
 
-  addTask(){
-    console.log(this.newTask,"TaskAdded");
-    this.httpService.addTask(this.newTask).subscribe(()=>{
-    this.newTask ='';
-    this.getALlTask();
-    })
+  addTask() {
+    console.log(this.newTask, 'TaskAdded');
+    this.httpService.addTask(this.newTask).subscribe(() => {
+      this.newTask = '';
+      this.getALlTask();
+    });
   }
 
-  getALlTask(){
-    this.httpService.getALlTask().subscribe((result:any)=>{
-      this.taskList=result;
-    })
+  getALlTask() {
+    this.httpService.getALlTask().subscribe((result: any) => {
+      this.taskList = result;
+    });
   }
 }
