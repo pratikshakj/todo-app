@@ -1,7 +1,4 @@
-<h2 class="font-bold text-xl"> My Day</h2>
-  <div class="text-blue-600"> {{ dateNow | date:'fullDate'}}
-
-  </div>
+<app-page-title></app-page-title>
 
   <div class="flex flex-col mt-6"  >
     <input
@@ -10,13 +7,11 @@
     placeholder="Enter your task"
     [(ngModel)]="newTask"
     (keydown.enter)="addTask()">
+    <!--Note : An event binding that listens for the Enter key press.
+    When pressed, it calls the addTask() method defined in the component's TypeScript file,
+    which likely adds the new task to a list.-->
   </div>
 
   <div class=" flex flex-col mt-6"  >
-  <h2 class ="font-bold text-xl">Tasks</h2>
-
-    @for (task of taskList; track task) {
-      <p
-      class="bg-white-100 w-full h-16 px-4 py-2 rounded shadow flex items-center mt-2 mb-2">{{task.title}}</p>
-    }
+  <app-task-lists [taskList]="taskList" (completed)="onComplete($event)"  (important)="onImportant($event)"></app-task-lists>
   </div>

@@ -1,40 +1,34 @@
 {
   "tasks": [
     {
-      "id": "9af6",
-      "title": "TaskTest1"
+      "id": "db5e",
+      "title": "Learn JS",
+      "completed": true,
+      "important": true
     },
     {
-      "id": "6c44",
-      "title": "Test1"
+      "id": "73fa",
+      "title": "Learn TS",
+      "important": true,
+      "completed": true
     },
     {
-      "id": "932a",
-      "title": "Test2"
+      "id": "5f64",
+      "title": "Learn HTML"
+
     },
     {
-      "id": "7d7f",
-      "title": "Testing Task"
+      "id": "06cf",
+      "title": "Learn CSS"
     },
     {
-      "id": "aa62",
-      "title": "TetsEmp"
+      "id": "7ab1",
+      "title": "Learn Graph query"
     },
     {
-      "id": "e7e9",
-      "title": "TestTask"
-    },
-    {
-      "id": "6716",
-      "title": "TestTask"
-    },
-    {
-      "id": "6161",
-      "title": "Task Test2"
-    },
-    {
-      "id": "edf8",
-      "title": "TestFinal"
+      "id": "1d30",
+      "title": "Learn Angular Unit Test Case"
+
     }
   ]
 }

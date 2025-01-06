@@ -18,5 +18,9 @@ export class HttpService {
   getALlTask(){
     return this.httpClient.get("http://localhost:3000/tasks"); //get request method
   }
+
+  updateTask(task:any){
+    return this.httpClient.put("http://localhost:3000/tasks/" + task.id , task);   //put request method
+  }
 }
 
