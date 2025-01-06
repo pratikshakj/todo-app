@@ -3,32 +3,31 @@
     {
       "id": "db5e",
       "title": "Learn JS",
-      "completed": true,
       "important": true
     },
     {
       "id": "73fa",
-      "title": "Learn TS",
-      "important": true,
-      "completed": true
+      "title": "Learn TS"
     },
     {
       "id": "5f64",
-      "title": "Learn HTML"
-
+      "title": "Learn HTML",
+      "completed": true
     },
     {
       "id": "06cf",
-      "title": "Learn CSS"
+      "title": "Learn CSS",
+      "completed": true
     },
     {
       "id": "7ab1",
-      "title": "Learn Graph query"
+      "title": "Learn Graph query",
+      "important": true
     },
     {
       "id": "1d30",
-      "title": "Learn Angular Unit Test Case"
-
+      "title": "Learn Angular Unit Test Case",
+      "important": true
     }
   ]
 }
