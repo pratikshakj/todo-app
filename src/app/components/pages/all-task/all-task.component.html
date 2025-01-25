@@ -13,5 +13,9 @@
   </div>
 
   <div class=" flex flex-col mt-6"  >
-  <app-task-lists [taskList]="taskList" (completed)="onComplete($event)"  (important)="onImportant($event)"></app-task-lists>
+  <app-task-lists
+  [taskList]="taskList"
+  (completed)="onComplete($event)"
+  (important)="onImportant($event)"
+  (delete)="deleteTask"></app-task-lists>
   </div>

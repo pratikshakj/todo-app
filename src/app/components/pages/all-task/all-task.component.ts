@@ -61,4 +61,10 @@ export class AllTaskComponent {
       this.getALlTask();
     });
   }
+
+  deleteTask(task: any) {
+    this.httpService.deleteTask(task).subscribe(() => {
+      this.getALlTask();
+    });
+  }
 }

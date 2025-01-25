@@ -48,4 +48,10 @@ export class ImportantTaskComponent {
 
     })
   }
+
+  deleteTask(task: any) {
+    this.httpService.deleteTask(task).subscribe(() => {
+      this.getALlTask();
+    });
+  }
 }

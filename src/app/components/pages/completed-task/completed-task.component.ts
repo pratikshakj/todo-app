@@ -44,4 +44,10 @@ export class CompletedTaskComponent {
       })
     }
 
+    deleteTask(task: any) {
+      this.httpService.deleteTask(task).subscribe(() => {
+        this.getALlTask();
+      });
+    }
+
 }

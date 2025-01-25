@@ -12,6 +12,7 @@ export class TaskListsComponent {
   @Input() taskList: any[] = [];
   @Output() important = new EventEmitter<any>();
   @Output() completed = new EventEmitter<any>();
+  @Output() delete = new EventEmitter<any>();
 
   markComplete(task: any) {
     this.completed.emit(task);
@@ -19,5 +20,9 @@ export class TaskListsComponent {
 
   markImportant(task: any) {
     this.important.emit(task);
+  }
+
+  deleteTask(task: any) {
+    this.delete.emit(task);
   }
 }
