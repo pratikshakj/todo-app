@@ -1,50 +1,15 @@
 {
   "tasks": [
     {
-      "id": "db5e",
-      "title": "Learn JS",
-      "important": true
-    },
-    {
-      "id": "73fa",
-      "title": "Learn TS"
-    },
-    {
-      "id": "5f64",
-      "title": "Learn HTML",
+      "id": "6eaf",
+      "title": "Angular easy Project TODO",
+      "important": true,
       "completed": true
     },
     {
-      "id": "06cf",
-      "title": "Learn CSS",
-      "completed": true
-    },
-    {
-      "id": "7ab1",
-      "title": "Learn Graph query",
+      "id": "8f7a",
+      "title": "Angular Tic-Tac-Toe Project",
       "important": true
-    },
-    {
-      "id": "1d30",
-      "title": "Learn Angular Unit Test Case",
-      "important": true
-    },
-    {
-      "id": "3723",
-      "title": "Test TODO Application"
-    },
-    {
-      "id": "6dd7",
-      "title": "sahana",
-      "important": true
-    },
-    {
-      "id": "8284",
-      "title": "Learn angular"
-    },
-    {
-      "id": "1ff4",
-      "title": "angular"
     }
   ]
 }

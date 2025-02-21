@@ -45,7 +45,6 @@ export class ImportantTaskComponent {
     task.important = true;
     console.log('Task Important',task);
     this.httpService.updateTask(task).subscribe(()=>{
-
     })
   }
 

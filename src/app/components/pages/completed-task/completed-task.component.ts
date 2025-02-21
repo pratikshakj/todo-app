@@ -49,5 +49,4 @@ export class CompletedTaskComponent {
         this.getALlTask();
       });
     }
-
 }
