@@ -1,0 +1,24 @@
+<app-page-title></app-page-title>
+
+<div class="flex flex-col mt-6">
+  <input
+    type="text"
+    class="w-full h-16 px-4 py-2 rounded shadow text-teal-800"
+    placeholder="Enter your task"
+    [(ngModel)]="newTask"
+    (keydown.enter)="addTask()"
+  />
+  <!--Note : An event binding that listens for the Enter key press.
+    When pressed, it calls the addTask() method defined in the component's TypeScript file,
+    which likely adds the new task to a list.-->
+</div>
+<div class="flex flex-col mt-6">
+  <app-task-lists
+    class = text-teal-800
+    [taskList]="taskList"
+    (completed)="onComplete($event)"
+    (important)="onImportant($event)"
+    (delete)="deleteTask($event)"
+  >
+  </app-task-lists>
+</div>

@@ -1,0 +1,17 @@
+<aside class="fixed top-16 w-80 shadow-lg rounded_corner bordet-gray-300 h-[calc(100vh_-_4rem)]">
+  <ul>
+    <li
+    [routerLink]="'/'"
+    routerLinkActive="bg-teal-100 border-l-4 bordet-teal-500 font-bold"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="p-4 cursor-pointer text-emerald-700"> All </li>
+    <li
+    [routerLink]="'/importants'"
+    routerLinkActive="bg-teal-50 border-l-4 bordet-teal-500 font-bold"
+    class="p-4 cursor-pointer text-emerald-700">Important</li>
+    <li
+    [routerLink]="'/completed'"
+     routerLinkActive="bg-teal-50 border-l-4 bordet-teal-500 font-bold"
+     class="p-4 cursor-pointer text-emerald-700">Completed</li>
+  </ul>
+</aside>

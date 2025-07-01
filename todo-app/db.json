@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "id": "6eaf",
+      "title": "Angular easy Project TODO",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": "8f7a",
+      "title": "Angular Tic-Tac-Toe Project",
+      "important": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<app-page-title></app-page-title>
+<div class="flex flex-col mt-6">
+  <app-task-lists
+    class = text-teal-800
+    [taskList]="taskList"
+    (important)="onImportant($event)"
+    (delete)="deleteTask($event)"
+  ></app-task-lists>
+</div>
